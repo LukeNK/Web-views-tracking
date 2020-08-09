@@ -17,10 +17,13 @@ You can just use any programming language and send a HTTP post requests to https
 Send the post request with the following data:
 `respond : <your_option>`
 Options:
-1. `link` Respond the entire link (include the app link) to put in HTML tag
-2. `code` Respond only 10 characters for the tracking code
-3. `html` Respond the HTML tag
-4. `count` Respon the link to the counter
+- `link` Respond the entire link (include the app link) to put in HTML tag
+- `code` Respond only 10 characters for the tracking code
+- `html` Respond the HTML tag
+- `count` Respon the link to the counter
+To get the respond with the view count, send post request:
+`respond : check, code: <your_code>`
+`<your_code>` is the 10 characters for the tracking code
 
 ### Examples
 #### Python
@@ -30,3 +33,20 @@ link = 'https://Web-views-tracking.lukenk.repl.co/cli'
 r = requests.post(link, data = {'respond' : 'html'}) 
 html_tag = r.text #get the entire HTML tag for use
 ```
+## Versions
+### 1.0 
+- First release to Gig Hub
+
+### 1.1 (not yet release)
+- Add interface to the counter view page
+- CLI command for view the views number
+
+### Some far day
+- Add IFrame for view counter
+- Options for the HTML code
+
+
+## Branches
+So I'll note some branches
+1. `main` the default, and fully able to run.
+2. `unstable-relpit` branch that connect to [repl.it](https://repl.it/@LukeNK/Web-views-tracking) so I can edit. As the name, this branch will be unstable and have a lot of bug, but will be the branch that have the latest features.

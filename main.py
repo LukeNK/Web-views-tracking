@@ -52,6 +52,7 @@ def views(f_name):
 @app.route('/cli',methods = ['POST'])
 def cli():
 	respond = request.form.get('respond')
+	code = request.form.get('code')
 	num = 0
 	length = 10 #overkill lol
 	letters = string.ascii_lowercase
@@ -67,6 +68,9 @@ def cli():
 		return('<link href="https://web-views-tracking.lukenk.repl.co/count/{link}" rel="stylesheet">'.format(link=result_str))
 	elif respond == 'count':
 		return('https://web-views-tracking.lukenk.repl.co/views/{link}'.format(link=result_str))
+	elif respond == 'check' and code != '':
+		f = open('file/' + code + '.txt', 'r')
+		return(f.read())
 	return('Wrong input!')
 
 app.run(host='0.0.0.0', port=8080)
