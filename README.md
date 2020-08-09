@@ -35,7 +35,7 @@ html_tag = r.text #get the entire HTML tag for use
 ```
 ## Versions
 ### 1.0 
-- First release to Gig Hub
+- First release to Git Hub
 
 ### 1.1 (not yet release)
 - Add interface to the counter view page
