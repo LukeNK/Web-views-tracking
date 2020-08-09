@@ -14,16 +14,16 @@ The HTML <link> tag will make the browser connect to the website, which then mak
 You can just use any programming language and send a HTTP post requests to https://Web-views-tracking.lukenk.repl.co/cli
 
 ### Post data
-Send the post request with the following data:
-`respond : <your_option>`
+Send the post request with the following data:  
+`respond : <your_option>`  
 Options:
 - `link` Respond the entire link (include the app link) to put in HTML tag
 - `code` Respond only 10 characters for the tracking code
 - `html` Respond the HTML tag
 - `count` Respon the link to the counter\
-To get the respond with the view count, send post request:
-`respond : check, code: <your_code>`
-`<your_code>` is the 10 characters for the tracking code
+To get the respond with the view count, send post request:  
+`respond : check, code: <your_code>`  
+`<your_code>` is the 10 characters for the tracking code  
 
 ### Examples
 #### Python
