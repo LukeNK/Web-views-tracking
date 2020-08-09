@@ -23,7 +23,7 @@ Options:
 - `count` Respon the link to the counter\
 To get the respond with the view count, send post request:  
 `respond : check, code: <your_code>`  
-`<your_code>` is the 10 characters for the tracking code  
+- `<your_code>` is the 10 characters for the tracking code  
 
 ### Examples
 #### Python
