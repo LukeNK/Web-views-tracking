@@ -20,7 +20,7 @@ Options:
 - `link` Respond the entire link (include the app link) to put in HTML tag
 - `code` Respond only 10 characters for the tracking code
 - `html` Respond the HTML tag
-- `count` Respon the link to the counter
+- `count` Respon the link to the counter\
 To get the respond with the view count, send post request:
 `respond : check, code: <your_code>`
 `<your_code>` is the 10 characters for the tracking code
